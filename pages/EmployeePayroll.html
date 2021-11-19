@@ -29,7 +29,9 @@
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
                 <input type="text" name="name" id="name" class="input" placeholder="Your Name ..." required>
+                <error-output class="text-error"></error-output>
             </div>
+
             <div class="row-content">
                 <label class="label text" for="profile">Profile image</label>
                 <div class="profile-radio-content">
@@ -51,6 +53,8 @@
           </label>
                 </div>
             </div>
+
+
 
             <div class="row-content">
                 <label class="label text" for="gender">Gender</label>
@@ -81,8 +85,9 @@
             <div class="row-content">
                 <label class="label text" for="salary">Choose Your Salary: </label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
-                <output class="salary-output text" for="salary">400000</output>
+                <output class="salary-output" for="salary">400000</output>
             </div>
+
 
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
@@ -135,13 +140,16 @@
                         <option value="Dec">December</option>
                     </select>
                     <select id="year" name="Year">
-                        <option value="2020">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
                         <option value="2017">2017</option>
                         <option value="2016">2016</option>
                     </select>
+                    <error-output class="dates-error" for="error"></error-output>
+
                 </div>
             </div>
 
@@ -160,7 +168,6 @@
 
         </form>
 
-    
 </body>
 
 </html>
